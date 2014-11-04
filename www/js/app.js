@@ -72,7 +72,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-news': {
           templateUrl: 'templates/tab-news.html',
-          controller: 'AccountCtrl'
+          controller: 'NewsCtrl'
         }
       }
     });
