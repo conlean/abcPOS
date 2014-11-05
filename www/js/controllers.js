@@ -3,12 +3,12 @@ angular.module('starter.controllers', [])
 .controller('DashCtrl', function($scope) {
 })
 
-.controller('PosCtrl', function($scope, Friends) {
-  $scope.friends = Friends.all();
+.controller('PosCtrl', function($scope, Pos) {
+  $scope.pos = Pos.all();
 })
 
-.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-  $scope.friend = Friends.get($stateParams.friendId);
+.controller('PosDetailCtrl', function($scope, $stateParams, Pos) {
+  $scope.pos = Pos.get($stateParams.id);
 })
 
 .controller('NewsCtrl', function($scope) {
