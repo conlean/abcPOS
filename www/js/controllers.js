@@ -7,6 +7,10 @@ angular.module('starter.controllers', [])
   $scope.pos = Pos.all();
 })
 
+.controller('LocCtrl', function($scope) {
+  
+})
+
 .controller('PosDetailCtrl', function($scope, $stateParams, Pos) {
   $scope.pos = Pos.get($stateParams.id);
 })

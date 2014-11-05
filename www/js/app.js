@@ -66,7 +66,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-
+    
+    .state('tab.loc', {
+      url: '/loc',
+      views: {
+        'tab-loc': {
+          templateUrl: 'templates/tab-loc.html',
+          controller: 'LocCtrl'
+        }
+      }
+    })
+  
     .state('tab.news', {
       url: '/news',
       views: {
