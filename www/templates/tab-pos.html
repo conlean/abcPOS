@@ -1,6 +1,17 @@
 <ion-view title="Puntos de Venta">
   <ion-content>
-    <ion-list>
+
+      <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios7-search placeholder-icon"></i>
+        <input type="search" placeholder="Calle, intersección, localidad, provincia">
+      </label>
+      <button class="button button-balanced">
+        Buscar
+      </button>
+    </div>
+      
+      <ion-list>
       <ion-item ng-repeat="p in pos" type="item-text-wrap" href="#/tab/pos/{{p.id}}">
         {{p.name}}
       </ion-item>

@@ -11,5 +11,6 @@ angular.module('starter.controllers', [])
   $scope.pos = Pos.get($stateParams.id);
 })
 
-.controller('NewsCtrl', function($scope) {
+.controller('NewsCtrl', function($scope, News) {
+    $scope.items = News.all();
 });
